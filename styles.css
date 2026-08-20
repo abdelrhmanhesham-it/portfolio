@@ -579,3 +579,261 @@ html[dir="rtl"] body{font-family:"Segoe UI",Tahoma,Arial,sans-serif}.rtl .hero h
 @media(prefers-reduced-motion:reduce){
   .orbit-ring,.profile-aura,.orbit-card,.ambient-dot,.scroll-hint span::after{animation:none!important}
 }
+
+/* ===== FINAL MOBILE FIX — HERO / ORBIT ===== */
+@media (max-width: 768px) {
+  .hero-orbit{
+    min-height:auto !important;
+    overflow:hidden;
+    display:block;
+    padding:92px 14px 48px !important;
+  }
+
+  .orbit-stage{
+    width:100%;
+    min-height:0 !important;
+    height:auto;
+    padding:0 !important;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    perspective:none;
+    transform:none;
+  }
+
+  .orbit-title{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    width:100%;
+    max-width:100%;
+    margin:0 auto 28px;
+    padding:0 10px;
+    text-align:center;
+    z-index:15;
+  }
+
+  .orbit-title .eyebrow{
+    max-width:100%;
+    margin:0 auto 14px;
+    font-size:10px;
+    letter-spacing:1.4px;
+    white-space:normal;
+    text-align:center;
+  }
+
+  .orbit-title h1{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:0;
+    font-size:clamp(38px, 10.8vw, 56px) !important;
+    line-height:1.02;
+    letter-spacing:-2.4px !important;
+    white-space:normal;
+    word-break:normal;
+    overflow-wrap:normal;
+    text-align:center;
+  }
+
+  .orbit-title h1 span{
+    display:block;
+    margin-top:4px;
+  }
+
+  .orbit-title p{
+    display:block !important;
+    max-width:320px;
+    margin:13px auto 0;
+    font-size:10px !important;
+    line-height:1.55;
+    letter-spacing:1px;
+  }
+
+  .center-profile{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    inset:auto !important;
+    transform:none !important;
+    width:230px !important;
+    height:230px !important;
+    margin:4px auto 24px;
+    z-index:10;
+  }
+
+  .profile-shell{
+    width:210px !important;
+    height:210px !important;
+    margin:auto;
+  }
+
+  .profile-shell img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+
+  .aura-one{
+    width:250px !important;
+    height:250px !important;
+  }
+
+  .aura-two{
+    width:285px !important;
+    height:285px !important;
+  }
+
+  .center-role-left,
+  .center-role-right{
+    display:none !important;
+  }
+
+  .orbit-card{
+    display:none !important;
+  }
+
+  .orbit-ring{
+    left:50% !important;
+    top:50% !important;
+    opacity:.22;
+    pointer-events:none;
+  }
+
+  .orbit-ring-one{
+    width:330px !important;
+    height:330px !important;
+  }
+
+  .orbit-ring-two{
+    width:390px !important;
+    height:390px !important;
+    opacity:.12;
+  }
+
+  .orbit-ring-three{
+    display:none !important;
+  }
+
+  .hero-bottom{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    inset:auto !important;
+    transform:none !important;
+    width:100%;
+    max-width:620px;
+    margin:0 auto;
+    padding:0 8px;
+    text-align:center;
+    z-index:14;
+  }
+
+  .hero-bottom .hero-role,
+  .hero-role{
+    max-width:100%;
+    margin:0 auto;
+    font-size:13px !important;
+    line-height:1.65;
+    text-align:center;
+  }
+
+  .hero-bottom .hero-creative,
+  .hero-creative{
+    margin:8px auto 0;
+    font-size:13px !important;
+    line-height:1.6;
+    text-align:center;
+  }
+
+  .hero-actions{
+    justify-content:center;
+    margin-top:22px;
+    gap:10px;
+  }
+
+  .hero-actions .btn{
+    min-width:145px;
+  }
+
+  .scroll-hint{
+    display:none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-orbit{
+    padding:86px 10px 42px !important;
+  }
+
+  .orbit-title{
+    margin-bottom:24px;
+    padding:0 6px;
+  }
+
+  .orbit-title .eyebrow{
+    font-size:9px;
+    letter-spacing:1.1px;
+    padding:7px 10px;
+  }
+
+  .orbit-title h1{
+    font-size:clamp(34px, 10.3vw, 46px) !important;
+    letter-spacing:-1.8px !important;
+  }
+
+  .center-profile{
+    width:210px !important;
+    height:210px !important;
+    margin-bottom:22px;
+  }
+
+  .profile-shell{
+    width:188px !important;
+    height:188px !important;
+  }
+
+  .aura-one{
+    width:225px !important;
+    height:225px !important;
+  }
+
+  .aura-two{
+    width:258px !important;
+    height:258px !important;
+  }
+
+  .orbit-ring-one{
+    width:290px !important;
+    height:290px !important;
+  }
+
+  .orbit-ring-two{
+    width:340px !important;
+    height:340px !important;
+  }
+
+  .hero-bottom .hero-role,
+  .hero-role,
+  .hero-bottom .hero-creative,
+  .hero-creative{
+    font-size:12px !important;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .hero-actions .btn{
+    width:min(260px, 100%);
+  }
+}
